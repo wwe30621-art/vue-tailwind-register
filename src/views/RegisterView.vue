@@ -18,11 +18,10 @@ const ui = {
     "bg-slate-900 rounded-xl hover:bg-slate-800 active:bg-slate-950 disabled:opacity-50 disabled:cursor-not-allowed",
 };
 
-
 const form = reactive({
   role: "owner", // 'owner' | 'shop'
 
-
+  
   email: "",
   phone: "",
   password: "",
@@ -156,7 +155,7 @@ const isOwner = computed(() => form.role === "owner");
           </span>
         </label>
 
-        <button type="submit" :class="ui.primary" :disabled="!form.agree">
+        <button type="submit" :class="ui.btnPrimary" :disabled="!form.agree">
           建立帳號
         </button>
       </form>
